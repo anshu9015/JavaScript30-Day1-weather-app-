@@ -40,7 +40,7 @@
         </div>
     </div>
     <script>
-        const apiKey = process.env.apiKey;
+        const apiKey = "dbe2cb9150b2a36c5b66399918afe0fa";
         const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
         const searchBox = document.querySelector(".search input");
@@ -83,7 +83,7 @@
 
         }
 
-        searchBtn.addEventListener("click", () => {
+        searchBtn.addEventListener("mouseover", () => {
             checkWeather(searchBox.value);
         })
 
@@ -92,3 +92,40 @@
 </body>
 
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a">
+        <p>this is a</p>
+        <div class="b">
+            <p>this is b</p>
+            <div class="c">
+                <p>this is c</p>
+            </div>
+        </div>
+    </div>
+    <button class="button">Add button</button>
+    <script>
+        function change(){
+           console.log("123");
+           console.log(document.querySelector(".a").innerHTML);
+           document.querySelector(".a p").innerHTML="this is d";
+           document.querySelector(".b p").innerHTML="this is e";
+           document.querySelector(".c p").innerHTML="this is f";
+           console.log(document.querySelector(".a").innerHTML) 
+        }
+        const btn = document.querySelector(".button");
+        btn.addEventListener("click", () =>{
+            change();
+        })
+    </script>
+</body>
+</html> -->
